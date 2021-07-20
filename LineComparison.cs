@@ -25,7 +25,7 @@ namespace LineComparisonComputation
             pointX2 = Convert.ToDouble(Console.ReadLine());
             pointY2 = Convert.ToDouble(Console.ReadLine());
 
-            distance = Math.Sqrt((pointX2 - pointX1) * (pointX2 - pointX1) + (pointY2 - pointY1) * (pointY2 - pointY2));
+            distance = Math.Sqrt((pointX2 - pointX1) * (pointX2 - pointX1) + (pointY2 - pointY1) * (pointY2 - pointY1));
             Console.WriteLine("Length of a line:" +distance);
         }
     }

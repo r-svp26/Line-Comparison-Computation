@@ -41,11 +41,13 @@ namespace LineComparisonComputation
             distance2 = Math.Sqrt((pointX4 - pointX3) * (pointX4 - pointX3) + (pointY4 - pointY3) * (pointY4 - pointY3));
             Console.WriteLine("Length of a line:" + distance2);
 
-            // compare two lines
-            if (distance1.Equals(distance2))
-                Console.WriteLine("Both the lines are equal.");
+            // comparing the two lines
+            if (distance1.CompareTo(distance2) > 0)
+                Console.WriteLine("The length of first is greater than second line.");
+            else if (distance1.CompareTo(distance2) < 0)
+                Console.WriteLine("The length of first is less than second line.");
             else
-                Console.WriteLine("Both the lines are not equal.");
+                Console.WriteLine("Both the lines are equal.");
 
         }
     }

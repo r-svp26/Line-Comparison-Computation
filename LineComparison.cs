@@ -46,6 +46,7 @@ namespace LineComparisonComputation
                 Console.WriteLine("Both the lines are equal.");
             else
                 Console.WriteLine("Both the lines are not equal.");
+
         }
     }
 }

@@ -6,9 +6,8 @@ namespace LineComparisonComputation
     {
         // variables
         static double distance1, distance2;
-
         /// <summary>
-        /// This method is used to check line status.
+        /// used CompareTo method to check the line is greater,less or both are equals.
         /// </summary>
         public static void CheckLine()
         {
@@ -16,7 +15,6 @@ namespace LineComparisonComputation
             distance1 = lineComparison1.Length();
             LineComparison lineComparison2 = new LineComparison(1.0, 2.5, 3.5, 1.2);
             distance2 = lineComparison2.Length();
-            // used compareto method to check the line greater,less or both are equals.
             if (distance1.CompareTo(distance2) > 0)
                 Console.WriteLine("The length of first line is greater than second line.");
             else if (distance1.CompareTo(distance2) < 0)
@@ -24,7 +22,6 @@ namespace LineComparisonComputation
             else
                 Console.WriteLine("Both the lines are equal.");
         }
-
         static void Main(string[] args)
         {
             Program.CheckLine();
